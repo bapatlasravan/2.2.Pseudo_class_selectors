@@ -1,0 +1,165 @@
+<html>
+<head><title>Pseudo-class selectors</title>
+<style type:"text/css">
+#one {
+  background-color: green;
+  color: red;
+  padding: 15px;
+  text-align: center;
+}
+#one:hover {
+  background-color: blue;;
+}
+
+ #two {
+display: none;
+background-color: yellow;
+color: red;
+  padding: 20px;
+}
+
+ .one:hover #two {
+  display: block;
+}
+ 
+#three li:first-child {
+  color: red;
+} 
+ 
+#four li:last-child {
+  color: blue;
+} 
+#five li:nth-child(2n) {
+ color: orange;
+} 
+#six li:nth-child(4) {
+  border: 2px solid cyan;
+}
+ #seven:hover {
+  color: hotpink;
+}
+#eight:active {
+  color: orange;
+}
+
+#nine.highlight:hover {
+  font-size: 22px;
+  color: orange;
+}
+
+
+
+</style>
+</head>
+<body>
+      <center><h1>Pseudo-class selector</h1></center>
+	<p>A Pseudo class in CSS is used to define the special state of an element. 
+	It can be combined with a CSS selector to add an effect to existing elements based on their states. some of the operations
+	of pseudo class selectors are</p>
+	<li>Hover on a element</li>
+	<li>Simple Tooltip Hover</li>
+	<li>Match the &lt i &gt elements</li>
+	<li>Links</li>
+
+
+	<h2><u>An example of using the :hover pseudo-class on a element:</u></h2>
+      		<p>code for a hover ellement is<br>
+                #one {<br>
+ 		 background-color: green;<br>
+		  color: red;<br>
+		  padding: 15px;<br>
+		  text-align: center;<br>
+			}<br>
+		#one:hover {<br>
+		  background-color: blue;<br>
+				}</p>
+         <p>Mouse over the element below to change its background color:</p>
+         <h1 id="one">Mouse Over Me</h1><hr><hr>
+
+	<h2><u>An example of using the Simple Tooltip Hover:</u></h2>
+	<p>A tooltip is often used to specify extra information about something when the user moves the mouse pointer over an element and the code for the
+	simple tooltip hover is<br>.
+	     #two {<br>
+		display: none;<br>
+		background-color: yellow;<br>
+		color: red;<br>
+		  padding: 20px;<br>
+		  }<br><br>
+			
+ 		.one:hover #two {<br>
+		  display: block;<br>
+		}</p>
+
+	<h4 class="one">Hover over this h4 element to show the p element
+	<center><p id="two">Tada! Here I am!</p></center>
+	</h4><hr><hr>
+
+
+	<h2><u>Match list elements:</u></h2>
+	<p>By using pseudo class in list we can change the style of first and last element in a list and we can also change the style of multiples of two, three,e.t.c.
+	and we can also change any element style in a list</p><br>
+
+	<p>here we are changing the color of the first child<br>
+	<ul id="three">
+	<li>Paragraph 1</li>
+	<li>Paragraph 2</li>	
+	<li>Paragraph 3</li></ul>
+
+	Here we are changing the color of a last child into blue
+        <ul  id="four">
+	<li>Paragraph 4</li>
+	<li>Paragraph 5</li>
+	<li>Paragraph 6</li></ul>
+
+	Here we are changing the style of multiples of 2
+        <ul id="five">
+ 	<li>Paragraph 7</li>
+	<li>Paragraph 8</li>
+	<li>Paragraph 9</li>
+	<li>Paragraph 10</li></ul>
+
+	here we are changing any paragrph we want
+	<ul id="six">
+	<li>Paragraph 11</li>
+	<li>Paragraph 11</li>
+	<li>Paragraph 11</li>
+	<li>Paragraph 11</li>
+	<li>Paragraph 11</li></ul><hr><hr>
+	
+
+
+	<h2><u>Change styles of alink using pseudo class selector</u></h2>
+	<p>By using pseudo class selector we can change the color of the link,we add hover to the link,we can highlight the hover in alink,we 
+	change color when the link is active,we can change the color of the link when we visited<br>
+
+         Here link color will be changed when move our mouse near to it<br>
+	<h4>a:hover {<br>
+  	color: pink;<br>
+	}<br>
+	</h4>
+	<a id="seven" href="https://github.com/bapatlasravan" target="blank">Git Hub</a><br>
+	<a id="seven" href="http://surl.li/cawkk" target="blank">Facebook</a><br>
+	<a id="seven" href="http://surl.li/cawkm" target="blank">Instagram</a><br>
+
+
+         Here when we select the link the color will be changed by using the code<br>
+	<h4>a:active {<br>
+  	color: orange;<br>
+	}<br>
+	</h4>
+	<a id="eight" href="https://github.com/bapatlasravan" target="blank">Git Hub</a><br>
+	<a id="eight" href="http://surl.li/cawkk" target="blank">Facebook</a><br>
+	<a id="eight" href="http://surl.li/cawkm" target="blank">Instagram</a><br>
+
+
+         Here we are highlighting the bellow link by changing the size and color of the link when we move the mouse near to it, we have to mention class="highlight" in &lt a &gt tag an the code for highlight is:<br>
+	<h4>a:highlight {<br>
+  	color: orange;<br>
+	font-size:22px
+	}<br>
+	</h4>
+	<a id="nine" class="highlight" href="https://github.com/bapatlasravan" target="blank">Git Hub</a><br>
+	<a id="nine" class="highlight"  href="http://surl.li/cawkk" target="blank">Facebook</a><br>
+	<a id="nine" class="highlight"  href="http://surl.li/cawkm" target="blank">Instagram</a><br>
+</body>
+</html>
